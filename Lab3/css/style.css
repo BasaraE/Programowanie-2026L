@@ -37,15 +37,17 @@
             flex-direction: row;
             align-items: center;
             justify-content: space-around;
-            font-size: 20px;
-            font-weight: 600;
-            gap: 10%;
+            
             
         }
         .nav a{
             text-decoration: none;
             color: black;
+            
+            font-size: 20px;
+            padding: 0 10px; 
         }
         #home{
             color:maroon;
+            font-weight: 700;
         }
