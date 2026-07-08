@@ -16,3 +16,13 @@ button:hover {
 button:active {
     transform: scale(0.95);
 }
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+    border-top: 1px solid #e9ecef;
+    font-size: 0.9em;
+    color: #6c757d;
+}
