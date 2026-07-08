@@ -19,3 +19,4 @@ Prosty projekt wykonany podczas laboratoriów.
 **Autor:** Maciej Mita
 **Numer albumu:** 73271
 Poprawa efektu P_U01
+Ostatnia modyfikacja: 08.07.2026
