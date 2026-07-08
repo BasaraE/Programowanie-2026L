@@ -8,12 +8,14 @@ Prosty projekt wykonany podczas laboratoriów.
 - CSS
 - JavaScript
 
+### Wykonane zadania (Album: 73271):
+- Dodano licznik filmów
+- Dodano favicon
+- Dodano sekcję Ostatnio dodane
+- Dodano stopkę z autorem projektu
+- Zaimplementowano zapis do localStorage
+- Dodano komunikat po pomyślnym zapisaniu filmu
+
 **Autor:** Maciej Mita
 **Numer albumu:** 73271
-Student
-### Wykonane zadania (Album: 73271):
-- Dodano favicon
-- Dodano sekcję Top 10
-- Dodano animację przycisku
-- Dodano licznik
 Poprawa efektu P_U01
