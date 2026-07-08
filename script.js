@@ -1,4 +1,4 @@
-
+// Inicjalizacja danych aplikacji
 const movies = JSON.parse(localStorage.getItem('movies')) || [];
 
 
