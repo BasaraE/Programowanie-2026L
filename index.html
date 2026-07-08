@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poprawa</title>
+    <title>MovieTracker - Poprawa P_U01</title>
     <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/3176/3176363.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -22,23 +22,25 @@
 
         <section>
             <h2>Dodaj film</h2>
-            <form>
-                <input type="text" id="title">
-                <button>Dodaj</button>
+            <form id="movieForm">
+                <input type="text" id="title" placeholder="Wpisz tytuł filmu...">
+                <button type="submit" id="addButton">Dodaj</button>
             </form>
+            <div id="message-container" style="margin-top: 10px; font-weight: bold; color: green;"></div>
         </section>
         
-        <section id="top-10-section">
-            <h2>Top 10 Najlepszych Filmów</h2>
-            <ol>
-                <li>Skazani na Shawshank</li>
-                <li>Ojciec chrzestny</li>
-                <li>Mroczny Rycerz</li>
-                <li>Pulp Fiction</li>
-                <li>Incepcja</li>
-            </ol>
+        <section id="recently-added-section">
+            <h2>Ostatnio dodane</h2>
+            <ul id="recentlyAddedList">
+                <li>Brak ostatnio dodanych filmów</li>
+            </ul>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; 2026 MovieTracker. Autor: Maciej Mita (Album: 73271)</p>
+    </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>
