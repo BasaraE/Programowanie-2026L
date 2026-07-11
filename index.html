@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poprawa</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
     <header>
         <h1>MovieTracker</h1>
+        <button id="themeToggle">Zmień motyw</button>
     </header>
 
     <main>
+        <div id="alert-message" style="display: none; padding: 10px; margin: 10px 0; background-color: #4caf50; color: white; text-align: center; border-radius: 4px;"></div>
         <section id="movies">
             <h2>Moje filmy</h2>
             <ul id="movieList">
@@ -18,6 +21,10 @@
         </section>
 
         <section>
+        <section id="action-movies">
+         <h2>Filmy akcji</h2>
+         <ul id="actionMovieList"></ul>
+        </section>
             <h2>Dodaj film</h2>
             <form>
                 <input type="text" id="title">
