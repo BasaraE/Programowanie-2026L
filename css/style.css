@@ -6,3 +6,7 @@ body.dark-theme header, body.dark-theme section {
     background-color: #2d2d2d;
     color: #ffffff;
 }
+#action-movies ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
