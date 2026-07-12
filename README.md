@@ -11,3 +11,4 @@ Prosty projekt wykonany podczas laboratoriów.
 ## Autor
 
 Student
+# Poprawa efektu P_U01 - Nikita Popov (73274)
