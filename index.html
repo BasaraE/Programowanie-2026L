@@ -4,16 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poprawa</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
 </head>
 <body>
     <header>
-        <h1>MovieTracker</h1>
+        <h1>ReadyToWatch — Movie Tracker</h1>
     </header>
 
     <main>
         <section id="movies">
-            <h2>Moje filmy</h2>
+            <h2>Moje filmy (<span id="movie-count">0</span>)</h2>
             <ul id="movieList">
+            </ul>
+        </section>
+
+        <section id="movies-to-watch">
+            <h2>Filmy do obejrzenia</h2>
+            <ul id="watchList">
             </ul>
         </section>
 
@@ -25,5 +36,7 @@
             </form>
         </section>
     </main>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
