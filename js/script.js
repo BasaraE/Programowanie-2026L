@@ -1,28 +1,43 @@
-const movies = [];
+let movies = JSON.parse(localStorage.getItem('movies')) || [];
 
 function updateCounter() {
     const counter = document.getElementById('movie-count');
     const movieItems = document.querySelectorAll('#movieList li');
-    
     if (counter) {
         counter.textContent = movieItems.length;
     }
+}
+
+function renderMovies() {
+    const movieList = document.getElementById('movieList');
+    if (!movieList) return;
+    
+    movieList.innerHTML = '';
+    
+    movies.forEach((movie) => {
+        const li = document.createElement('li');
+        li.textContent = movie;
+        movieList.appendChild(li);
+    });
+    
+    updateCounter();
 }
 
 function addMovie(event) {
     if (event) event.preventDefault();
     
     const input = document.getElementById('title');
-    const movieList = document.getElementById('movieList');
+    if (!input) return;
     
-    if (input && movieList && input.value.trim() !== '') {
-        const li = document.createElement('li');
-        li.textContent = input.value.trim();
-        movieList.appendChild(li);
+    const movieTitle = input.value.trim();
+    
+    if (movieTitle !== '') {
+        movies.push(movieTitle);
+        
+        localStorage.setItem('movies', JSON.stringify(movies));
         
         input.value = '';
-        
-        updateCounter();
+        renderMovies();
     }
 }
 
@@ -31,5 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (form) {
         form.addEventListener('submit', addMovie);
     }
-    updateCounter();
+    
+    renderMovies();
 });
