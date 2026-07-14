@@ -1,0 +1,28 @@
+body{
+    font-family: Arial, sans-serif;
+    margin:40px;
+}
+
+h1{
+    font-family: Georgia, serif;
+    color: darkblue;
+}
+
+section{
+    margin-bottom:30px;
+}
+
+input{
+    padding:8px;
+}
+
+button{
+    padding:8px 15px;
+    cursor:pointer;
+}
+
+#message{
+    color:green;
+    font-weight:bold;
+    margin-top:10px;
+}
