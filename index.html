@@ -1,29 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poprawa</title>
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>MovieTracker</h1>
-    </header>
 
-    <main>
-        <section id="movies">
-            <h2>Moje filmy</h2>
-            <ul id="movieList">
-            </ul>
-        </section>
+<header>
+    <h1>MovieTracker</h1>
+</header>
 
-        <section>
-            <h2>Dodaj film</h2>
-            <form>
-                <input type="text" id="title">
-                <button>Dodaj</button>
-            </form>
-        </section>
-    </main>
+<main>
+
+    <section id="movies">
+        <h2>Moje filmy</h2>
+
+        <ul id="movieList">
+
+        </ul>
+    </section>
+
+    <section id="movies2025">
+        <h2>Filmy z 2025 roku</h2>
+
+        <ul>
+            <li>Avatar 3</li>
+            <li>Superman</li>
+            <li>Tron: Ares</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Dodaj film</h2>
+
+        <form id="movieForm">
+
+            <input
+                type="text"
+                id="title"
+                placeholder="Nazwa filmu"
+                required
+            >
+
+            <button type="submit">
+                Dodaj
+            </button>
+
+        </form>
+
+        <p id="message"></p>
+
+    </section>
+
+</main>
+
+<script src="js/script.js"></script>
+
 </body>
 </html>
