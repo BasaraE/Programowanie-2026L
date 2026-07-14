@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
     <title>Poprawa</title>
 </head>
 <body>
@@ -12,8 +13,17 @@
 
     <main>
         <section id="movies">
-            <h2>Moje filmy</h2>
+            <h2>Moje filmy (<span id="movie-counter">0</span>)</h2>
             <ul id="movieList">
+            </ul>
+        </section>
+
+        <section id="directors">
+            <h2>Ulubieni reżyserzy</h2>
+            <ul>
+                <li>Christopher Nolan</li>
+                <li>Quentin Tarantino</li>
+                <li>Denis Villeneuve</li>
             </ul>
         </section>
 
@@ -22,8 +32,10 @@
             <form>
                 <input type="text" id="title">
                 <button>Dodaj</button>
+                <p id="message-box" style="color: #27ae60; font-weight: bold; margin-top: 10px; display: none;"></p>
             </form>
         </section>
     </main>
+    <script src="js/script.js"></script>
 </body>
 </html>
