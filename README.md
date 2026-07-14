@@ -10,4 +10,6 @@ Prosty projekt wykonany podczas laboratoriów.
 
 ## Autor
 
-Student
+Diana Hapiuk
+
+Nr albumu: 73094
