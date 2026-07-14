@@ -10,4 +10,5 @@ Prosty projekt wykonany podczas laboratoriów.
 
 ## Autor
 
-Student
+Student: Mykhailo Ilichov
+Numer albumu: 73054
