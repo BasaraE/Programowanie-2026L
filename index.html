@@ -1,29 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poprawa</title>
+    <title>Biblioteka Filmów - 74114</title>
+    
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>">
+    
+    <!-- Podłączenie osobnego pliku ze stylami CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>MovieTracker</h1>
-    </header>
 
-    <main>
-        <section id="movies">
-            <h2>Moje filmy</h2>
-            <ul id="movieList">
+    
+    <div id="success-toast">
+        🎉 Sukces! Film został pomyślnie dodany.
+    </div>
+
+    <div class="container">
+        <h1>Baza Filmów</h1>
+
+        
+        <div class="counter-container">
+            Zapisanych filmów łącznie: <span id="total-count">0</span>
+        </div>
+
+        
+        <form id="movie-form">
+            <div class="form-group">
+                <label for="movie-title">Tytuł filmu:</label>
+                <input type="text" id="movie-title" placeholder="np. Kiler, Matrix..." required>
+            </div>
+            
+            <div class="form-group">
+                <label for="movie-genre">Kategoria:</label>
+                <select id="movie-genre">
+                    <option value="general">Inne gatunki</option>
+                    <option value="comedy">Komedia</option>
+                </select>
+            </div>
+
+            
+            <button type="submit" id="add-movie-btn">Dodaj film</button>
+        </form>
+
+        
+        <div class="movie-section">
+            <h2>Wszystkie filmy</h2>
+            <ul id="general-movie-list">
+                
             </ul>
-        </section>
+        </div>
 
-        <section>
-            <h2>Dodaj film</h2>
-            <form>
-                <input type="text" id="title">
-                <button>Dodaj</button>
-            </form>
-        </section>
-    </main>
+        
+        <div class="movie-section">
+            <h2>Filmy komediowe 🎭</h2>
+            <ul id="comedy-movie-list">
+                
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/script.js" defer></script>
 </body>
 </html>
+<!-- dziala -->
