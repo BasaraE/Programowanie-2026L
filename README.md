@@ -10,4 +10,12 @@ Prosty projekt wykonany podczas laboratoriów.
 
 ## Autor
 
-Student
+Student Ihnatsi Niakrasau 73823
+
+## Changes
+
+- added favicon
+- added science-fiction section
+- changed cards layout
+- added movie counter
+- added form validation
