@@ -22,7 +22,9 @@ form.addEventListener("submit", function(e){
     list.appendChild(li);
 
     message.textContent = "Film został dodany pomyślnie!";
-
+setTimeout(() => {
+    message.textContent = "";
+}, 3000);
     title.value = "";
 
 });
