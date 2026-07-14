@@ -54,3 +54,4 @@ form.addEventListener('submit', function(event) {
     
     titleInput.value = '';
 });
+// Funkcja powiadomień działa poprawnie
